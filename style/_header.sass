@@ -1,9 +1,56 @@
 .header
-    background-color: #e0e0e0
+    background: url('../img/main/bg.jpg') no-repeat 
+    background-size: cover
+    &-menu
+        background: #ffffff
     &-wrap
-        height: 55px
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         align-items: center
+        position: relative
     &_link
+        display: flex
+        overflow: hidden
+    &_contact
+        text-align: right
+    &-tel
+        text-decoration: none
+        color: #1f1f1f
+        font-size: 17px
+        font-weight: 700
+        +light
+        margin-bottom: 7px
+    &-link
+        color: #000000
+        font-size: 14px
+        margin-right: 35px
+        +light
+        &:hover
+            text-decoration: none
+    &-request
+        color: $main-blue
+        +light
+    
+#burger
+    display: none
+label
+    display: none
+    font-size: 18px
+    +light
+.burger-line
+    position: absolute
+    top: 22px
+    left: 0
+    width: 25px
+    height: 2px
+    background-color: #fff
+    transition: .5s all
+.second
+    top: 30px
+.third
+    top: 30px
+.fourth
+    top: 38px
+
+    
         
