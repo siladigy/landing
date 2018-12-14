@@ -27,6 +27,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0;
   position: relative;
 }
 
@@ -120,7 +121,7 @@ label {
 }
 
 .main-text_subtitle {
-  margin-top: 50px;
+  margin-top: 35px;
   font-size: 20px;
   color: #fffafa;
   font-family: 'Proxima Nova', sans-serif;
@@ -134,14 +135,14 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 66px;
+  margin-top: 60px;
 }
 
 .main-text_list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 27px;
+  margin-bottom: 22px;
   position: relative;
 }
 
@@ -190,7 +191,7 @@ label {
 }
 
 .main-text_list-item__text {
-  margin-left: 40px;
+  margin-left: 35px;
   color: #fff;
   font-family: 'Proxima Nova', sans-serif;
   font-size: 15px;
@@ -208,7 +209,8 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #fff;
-  width: 370px;
+  width: 375px;
+  margin-top: 10px;
 }
 
 .main-form_title {
@@ -234,7 +236,7 @@ label {
   text-align: center;
   margin: 0 auto;
   width: 260px;
-  padding: 20px;
+  padding: 16px;
   margin-bottom: 15px;
   border: 1px solid #e8e8e8;
   color: #7c7c7c;
@@ -274,7 +276,7 @@ label {
 
 .button {
   background-color: #22bac1;
-  padding: 25px;
+  padding: 22px;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 15px;
@@ -303,7 +305,7 @@ label {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-top: 20px;
+    padding-top: 18px;
   }
   .header-menu {
     background: none;
@@ -336,7 +338,7 @@ label {
     cursor: pointer;
     color: #ffffff;
     position: absolute;
-    top: 22px;
+    top: 21px;
     left: 0;
     width: 100px;
     text-align: right;
@@ -395,7 +397,8 @@ label {
     font-size: 13px;
   }
   .main-form {
-    width: 300px;
+    height: 320px;
+    width: 270px;
   }
   .main-form_title {
     font-size: 14px;
@@ -403,7 +406,7 @@ label {
     margin-bottom: 20px;
   }
   .input-main {
-    width: 85%;
+    width: 75%;
     padding: 15px;
     margin-bottom: 10px;
   }
@@ -436,13 +439,19 @@ label {
   }
   .main-form {
     margin: 15px auto;
-    height: 350px;
-    width: 80%;
+    height: 300px;
+    width: 240px;
   }
   .main-form_title {
     font-size: 14px;
     max-width: 200px;
     margin-bottom: 20px;
+  }
+  .input-main {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
