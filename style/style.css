@@ -394,25 +394,6 @@ label {
   margin-top: 60px;
 }
 
-.arrow {
-  width: 70px;
-  height: 30px;
-  line-height: 340;
-  cursor: pointer;
-}
-
-.arrow_right {
-  background: url("../img/projects/right.png") no-repeat center;
-  background-size: 100%;
-  margin-left: 120px;
-}
-
-.arrow_left {
-  background: url("../img/projects/left.png") no-repeat center;
-  background-size: 100%;
-  margin-right: 120px;
-}
-
 .type {
   padding-top: 100px;
 }
@@ -538,23 +519,23 @@ label {
 
 .clients {
   padding-top: 100px;
-  padding-bottom: 178px;
+  padding-bottom: 130px;
+}
+
+.clients-title {
+  font-size: 24px;
+  margin-bottom: 50px;
 }
 
 .carousel {
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: 1050px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .client-item {
   height: 170px;
   position: relative;
-  border: 1px solid transparent;
 }
 
 .client-item img {
@@ -568,6 +549,25 @@ label {
 
 .client-item:focus {
   outline: none;
+}
+
+.arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.arrow_right {
+  background: url("../img/right.png") no-repeat center;
+  right: -70px;
+  top: 40%;
+}
+
+.arrow_left {
+  background: url("../img/left.png") no-repeat center;
+  left: -70px;
+  top: 40%;
 }
 
 .map {
@@ -588,6 +588,9 @@ label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-phone {
@@ -640,6 +643,15 @@ label {
   }
   .header-link {
     margin-right: 10px;
+  }
+  .carousel {
+    max-width: 800px;
+  }
+  .arrow_right {
+    right: -40px;
+  }
+  .arrow_left {
+    left: -40px;
   }
 }
 
@@ -717,6 +729,9 @@ label {
     line-height: 40px;
     max-width: 450px;
   }
+  .carousel {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -755,6 +770,9 @@ label {
     width: 75%;
     padding: 15px;
     margin-bottom: 10px;
+  }
+  .carousel {
+    max-width: 300px;
   }
 }
 
@@ -798,6 +816,38 @@ label {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 13px;
+  }
+  .works {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .works-title {
+    font-size: 18px;
+  }
+  .carousel {
+    max-width: 250px;
+  }
+  .arrow_right {
+    right: -30px;
+  }
+  .arrow_left {
+    left: -30px;
+  }
+  .clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .address {
+    margin-bottom: 15px;
+  }
+  .recall {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */

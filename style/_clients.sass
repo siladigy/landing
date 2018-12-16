@@ -1,14 +1,16 @@
 .clients
     padding-top: 100px
-    padding-bottom: 178px
+    padding-bottom: 130px
+    &-title
+        font-size: 24px
+        margin-bottom: 50px
 .carousel
-    margin-top: 100px
-    display: flex
-    align-items: center
+    max-width: 1050px
+    margin: 0 auto
+    position: relative
 .client-item
     height: 170px
     position: relative
-    border: 1px solid transparent
     img
         position: absolute
         top: 0
@@ -18,3 +20,18 @@
         margin: auto
     &:focus
         outline: none
+.arrow
+    position: absolute
+    width: 30px
+    height: 30px
+    cursor: pointer
+    &_right
+        background: url('../img/right.png') no-repeat center 
+        right: -70px
+        top: 40%
+    &_left
+        background: url('../img/left.png') no-repeat center 
+        left: -70px
+        top: 40%
+
+
