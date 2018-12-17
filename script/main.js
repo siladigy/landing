@@ -8,7 +8,18 @@ $(document).ready(function(){
   $('.slider').slick({
     infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 2
+    slidesToScroll: 2,
+    nextArrow: '<div class="arrow arrow_right"></div>',
+    prevArrow: '<div class="arrow arrow_left"></div>',
+    responsive: [
+        {
+            breakpoint: 770,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+    ]
   });
 });
 
@@ -23,17 +34,10 @@ $(document).ready(function(){
       {
           breakpoint: 1200,
           settings: {
-              slidesToShow: 5,
+              slidesToShow: 4,
               slidesToScroll: 1
           }
       },
-      {
-        breakpoint: 1100,
-        settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1
-        }
-    },
       {
           breakpoint: 1024,
           settings: {

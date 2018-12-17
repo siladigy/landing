@@ -322,15 +322,12 @@ label {
 
 .projects-subtitle {
   margin-top: 35px;
-  margin-bottom: 95px;
+  margin-bottom: 70px;
 }
 
 .slider {
-  max-width: 1170px;
+  max-width: 900px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -561,13 +558,13 @@ label {
 .arrow_right {
   background: url("../img/right.png") no-repeat center;
   right: -70px;
-  top: 40%;
+  top: 42%;
 }
 
 .arrow_left {
   background: url("../img/left.png") no-repeat center;
   left: -70px;
-  top: 40%;
+  top: 42%;
 }
 
 .map {
@@ -643,6 +640,15 @@ label {
   }
   .header-link {
     margin-right: 10px;
+  }
+  .slider {
+    max-width: 850px;
+  }
+  .slider__item-subtitle {
+    margin-top: 35px;
+  }
+  .slider__item-wrap {
+    margin-top: 45px;
   }
   .carousel {
     max-width: 800px;
@@ -728,6 +734,34 @@ label {
     font-size: 30px;
     line-height: 40px;
     max-width: 450px;
+  }
+  .slider {
+    max-width: 650px;
+  }
+  .slider-button {
+    padding: 15px 30px;
+  }
+  .slider__item img {
+    height: 260px;
+  }
+  .slider__item-title {
+    font-size: 18px;
+  }
+  .slider__item-subtitle {
+    margin-top: 30px;
+  }
+  .slider__item-descr {
+    font-size: 13px;
+  }
+  .slider__item-wrap {
+    margin-top: 28px;
+  }
+  .slider__item-block_digit {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .slider__item-button {
+    margin-top: 40px;
   }
   .carousel {
     max-width: 600px;
@@ -823,6 +857,9 @@ label {
   }
   .works-title {
     font-size: 18px;
+  }
+  .slider {
+    max-width: 500px;
   }
   .carousel {
     max-width: 250px;
