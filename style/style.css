@@ -854,6 +854,16 @@ label {
     margin-bottom: 10px;
     font-size: 13px;
   }
+  .type {
+    padding-top: 50px;
+  }
+  .type-title {
+    font-size: 22px;
+  }
+  .type-subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
   .works {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -892,6 +902,15 @@ label {
   }
   .slider__item-button {
     margin-top: 20px;
+  }
+  .projects {
+    padding: 50px;
+  }
+  .projects-title {
+    font-size: 22px;
+  }
+  .projects-subtitle {
+    font-size: 14px;
   }
   .carousel {
     max-width: 250px;
