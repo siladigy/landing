@@ -872,7 +872,7 @@ label {
     max-width: 250px;
   }
   .slider__item {
-    margin: 0 auto;
+    margin-left: 20px;
   }
   .slider__item img {
     height: 200px;
