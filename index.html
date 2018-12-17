@@ -34,7 +34,7 @@
                 </div>
             <div class="header_contact">
                 <a href="tel:88008913333" class="header-tel">8 800 891-33-33</a><br>
-                <a href="#!" class="header-request" onclick="priceScript()">Заказать обратный звонок</a>
+                <a href="#!" class="header-request" onclick="priceScript()" id='request1'>Заказать обратный звонок</a>
             </div>
         </div>
         </div>
@@ -91,7 +91,7 @@
                         <input class='input-main' type="text" placeholder='Ваше имя' required>
                         <input class='input-main' type="tel" id='phone' placeholder='Контактный телефон' required>
                         <input class='input-main' type="email" placeholder='Электронная почта' required>
-                        <button type="submit" class="input-main button">Оставить заявку</button>
+                        <button type="submit" class="input-main button" id='submit'>Оставить заявку</button>
                     </form>
                 </div>
             </div>
@@ -540,6 +540,15 @@
     document.querySelector('#request').addEventListener('click', function(){
         yaCounter51612560.reachGoal('link'); return true;
     });
+
+    document.querySelector('#request1').addEventListener('click', function(){
+        yaCounter51612560.reachGoal('link'); return true;
+    });
+
+    document.querySelector('#submit').addEventListener('click', function(){
+        yaCounter51612560.reachGoal('btn'); return true;
+    });
+
 </script>
 </body>
 </html>
