@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
                 </div>
             <div class="header_contact">
                 <a href="tel:88008913333" class="header-tel">8 800 891-33-33</a><br>
-                <a href="#!" class="header-request">Заказать обратный звонок</a>
+                <a href="#!" class="header-request" onclick="priceScript()">Заказать обратный звонок</a>
             </div>
         </div>
         </div>
@@ -132,7 +132,7 @@
                         Гостиницы и санатории
                 </div>
                 <div class="type-item_button">
-                    <button class="button button-o">Рассчитать стоимость
+                    <button class="button button-o" onclick="priceScript()">Рассчитать стоимость
                         </button>
                 </div>
             </div>
@@ -157,7 +157,7 @@
                             Мосты и тоннели
                     </div>
                     <div class="type-item_button">
-                        <button class="button button-o">Рассчитать стоимость
+                        <button class="button button-o" onclick="priceScript()">Рассчитать стоимость
                             </button>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                                 Технологические линии
                         </div>
                         <div class="type-item_button">
-                            <button class="button button-o">Рассчитать стоимость
+                            <button class="button button-o" onclick="priceScript()">Рассчитать стоимость
                                 </button>
                         </div>
                     </div>
@@ -211,7 +211,7 @@
                                     Заводы
                             </div>
                             <div class="type-item_button">
-                                <button class="button button-o">Рассчитать стоимость
+                                <button class="button button-o" onclick="priceScript()">Рассчитать стоимость
                                     </button>
                             </div>
                         </div>
@@ -237,7 +237,7 @@
                                         
                                 </div>
                                 <div class="type-item_button">
-                                    <button class="button button-o">Рассчитать стоимость
+                                    <button class="button button-o" onclick="priceScript()">Рассчитать стоимость
                                         </button>
                                 </div>
                             </div>
@@ -253,7 +253,7 @@
 и совершенно любых размеров
                                     </div>
                                     <div class="type-item_button">
-                                        <button class="button button-o">Рассчитать стоимость
+                                        <button class="button button-o" onclick="priceScript()">Рассчитать стоимость
                                             </button>
                                     </div>
                                 </div>
@@ -312,7 +312,7 @@
                             </div>
                 </div>
                 <div class="slider__item-button">
-                    <button class="button slider-button">Заказать макет</button>
+                    <button class="button slider-button" onclick="priceScript()">Заказать макет</button>
                 </div>
             </div>
             </div>
@@ -358,7 +358,7 @@
                                         </div>
                             </div>
                             <div class="slider__item-button">
-                                <button class="button slider-button">Заказать макет</button>
+                                <button class="button slider-button" onclick="priceScript()">Заказать макет</button>
                             </div>
                         </div>
             </div>
@@ -493,7 +493,7 @@
 </section>
 
 <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.7552862280695!2d37.53578851556841!3d55.84956118057936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf930752af%3A0xaaff34b00497bccc!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjU0Mzg!5e0!3m2!1sru!2sua!4v1544991353070" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.7552862280695!2d37.53578851556841!3d55.84956118057936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf930752af%3A0xaaff34b00497bccc!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjU0Mzg!5e0!3m2!1sru!2sua!4v1544991353070" class='google-map' allowfullscreen></iframe>
 </section>
 
 <section class="footer" id='contacts'>
@@ -513,12 +513,25 @@
                 <a href="tel:88008913333" class='footer-phone'>8 800 891-33-33</a>
             </div>
             <div class="recall-request">
-                <a href="#" class='footer-request'>Заказать обратный звонок</a>
+                <a href="#!" class='footer-request' onclick="priceScript()">Заказать обратный звонок</a>
             </div>
         </div>
         </div>
     </div>
 </section>
+
+<div class="modal" id="MyModal">
+    <div class="modal1-content">
+        <span class="close" onclick='offScript()'>&times;</span><br>
+        <h3 class='modal1-title'>Оставьте заявку и получите расчет<br> стоимость макета</h3><br>
+        <form action="#" method="POST" class="ajax-submit">
+            <input type="text" class="modal1" placeholder='Ваш e-mail' required><br>
+            <input type="text" class="modal1" id="phone4" placeholder='Ваш телефон' required>
+            <button type='submit' class="button modal1-btn" onclick="submitScript()">Заказать</button>
+        </form>
+
+   </div>
+</div>
 
 <script src="script/slick.min.js"></script>
 </body>

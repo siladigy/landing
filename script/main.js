@@ -55,3 +55,13 @@ $(document).ready(function(){
   ]
 });
 });
+
+function priceScript(){
+    var modal = document.getElementById('MyModal')
+    modal.style.display = "block";
+};
+
+function offScript(){
+    var modal = document.getElementById('MyModal')
+    modal.style.display = 'none';
+};
