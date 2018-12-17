@@ -513,7 +513,7 @@
                 <a href="tel:88008913333" class='footer-phone'>8 800 891-33-33</a>
             </div>
             <div class="recall-request">
-                <a href="#!" class='footer-request' onclick="priceScript()">Заказать обратный звонок</a>
+                <a href="#!" class='footer-request' onclick="priceScript()" id='request'>Заказать обратный звонок</a>
             </div>
         </div>
         </div>
@@ -551,5 +551,10 @@
  </script>
  <noscript><div><img src="https://mc.yandex.ru/watch/51612560" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
  <!-- /Yandex.Metrika counter -->
+ <script>
+    document.querySelector('#request').addEventListener('click', function(){
+        yaCounter51612560.reachGoal('link'); return true;
+    });
+</script>
 </body>
 </html>
