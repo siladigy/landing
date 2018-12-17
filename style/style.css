@@ -882,7 +882,7 @@ label {
     max-width: 250px;
   }
   .slider__item {
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .slider__item img {
     height: 200px;
@@ -897,7 +897,7 @@ label {
     margin-top: 15px;
   }
   .slider__item-block_digit {
-    font-size: 13px;
+    font-size: 10px;
     margin-top: 5px;
   }
   .slider__item-button {
