@@ -805,6 +805,9 @@ label {
     padding: 15px;
     margin-bottom: 10px;
   }
+  .slider {
+    max-width: 500px;
+  }
   .carousel {
     max-width: 300px;
   }
@@ -859,7 +862,36 @@ label {
     font-size: 18px;
   }
   .slider {
-    max-width: 500px;
+    max-width: 280px;
+  }
+  .slider-button {
+    padding: 10px 25px;
+  }
+  .slider-wrap {
+    padding-left: 0;
+    max-width: 250px;
+  }
+  .slider__item {
+    margin: 0 auto;
+  }
+  .slider__item img {
+    height: 200px;
+  }
+  .slider__item-subtitle {
+    margin-top: 15px;
+  }
+  .slider__item-descr {
+    margin-top: 5px;
+  }
+  .slider__item-wrap {
+    margin-top: 15px;
+  }
+  .slider__item-block_digit {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .slider__item-button {
+    margin-top: 20px;
   }
   .carousel {
     max-width: 250px;
