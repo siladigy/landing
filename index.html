@@ -34,7 +34,7 @@
                 </div>
             <div class="header_contact">
                 <a href="tel:88008913333" class="header-tel">8 800 891-33-33</a><br>
-                <a href="#!" class="header-request" onclick="priceScript()" id='request1'>Заказать обратный звонок</a>
+                <a href="#!" class="header-request" onclick="priceScript()" id='request1'>Заказать <span class="xs">обратный</span> звонок</a>
             </div>
         </div>
         </div>
@@ -87,10 +87,15 @@
                     <div class="main-form_title">
                         Оставьте заявку и получите расчет стоимость макета в течение <strong>30 минут</strong>
                     </div>
-                    <form action="#" class="form-main">
-                        <input class='input-main' type="text" placeholder='Ваше имя' required>
-                        <input class='input-main' type="tel" id='phone' placeholder='Контактный телефон' required>
-                        <input class='input-main' type="email" placeholder='Электронная почта' required>
+                    <form class="form-main">
+
+                        <input type="hidden" name="project_name" value="Изготовление Макетов">
+                        <input type="hidden" name="admin_email" value="sgeorge7731@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заполненная форма">
+
+                        <input class='input-main' name="Name" type="text" placeholder='Ваше имя' value required>
+                        <input class='input-main' name="Phone" type="tel" id='phone' placeholder='Контактный телефон' required>
+                        <input class='input-main' name="e-mail" type="email" placeholder='Электронная почта' required>
                         <button type="submit" class="input-main button" id='submit'>Оставить заявку</button>
                     </form>
                 </div>
@@ -524,14 +529,27 @@
     <div class="modal1-content">
         <span class="close" onclick='offScript()'>&times;</span><br>
         <h3 class='modal1-title'>Оставьте заявку и получите расчет<br> стоимость макета</h3><br>
-        <form action="#" method="POST" class="ajax-submit">
-            <input type="text" class="modal1" placeholder='Ваш e-mail' required><br>
-            <input type="text" class="modal1" id="phone4" placeholder='Ваш телефон' required>
+        <form>
+
+                <input type="hidden" name="project_name" value="Изготовление Макетов">
+                <input type="hidden" name="admin_email" value="sgeorge7731@gmail.com">
+                <input type="hidden" name="form_subject" value="Заполненная форма">
+
+            <input type="text" name="e-mail" class="modal1" placeholder='Ваш e-mail' required><br>
+            <input type="text" name="Phone"class="modal1" id="phone1" placeholder='Ваш телефон' required>
             <button type='submit' class="button modal1-btn" onclick="submitScript()">Заказать</button>
         </form>
 
    </div>
 </div>
+
+<div class="modal-thanks" id="thanks">
+        <div class="modal-content">
+            <span class="close" onclick='offThanksScript()'>&times;</span><br>
+            <h3 class='modal-title'>Спасибо за заявку!</h3><br>
+    
+       </div>
+    </div>
 
 <script src="script/slick.min.js"></script>
 

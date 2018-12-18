@@ -442,6 +442,10 @@ label {
   margin-top: 24px;
 }
 
+.type-item_img img {
+  max-width: 100%;
+}
+
 .type-item_text {
   margin: 0 auto;
   margin-top: 35px;
@@ -532,6 +536,7 @@ label {
 
 .client-item {
   height: 170px;
+  font-weight: 800;
   position: relative;
 }
 
@@ -708,6 +713,45 @@ label {
   cursor: pointer;
 }
 
+.modal-thanks {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.modal-title {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 950px;
@@ -843,6 +887,9 @@ label {
   .modal1-content {
     width: 400px;
   }
+  .modal-content {
+    width: 400px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -901,13 +948,23 @@ label {
     width: 250px;
     font-size: 16px;
   }
+  .modal-content {
+    width: 250px;
+  }
+  .modal-title {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 575px) {
   .header-link {
     font-size: 15px;
   }
+  .header-request {
+    font-size: 13px;
+  }
   .main-wrap {
+    padding-top: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -921,7 +978,7 @@ label {
     text-align: center;
   }
   .main-text_title {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 20px;
     max-width: 100%;
   }
@@ -1041,6 +1098,15 @@ label {
   .modal1-btn {
     width: 200px;
     font-size: 16px;
+  }
+  .modal-content {
+    width: 200px;
+  }
+  .modal-title {
+    font-size: 12px;
+  }
+  .xs {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

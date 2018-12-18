@@ -2,6 +2,10 @@ $(function(){
     $("#phone").mask("7(999) 99-999-99");
   });
 
+  $(function(){
+    $("#phone1").mask("7(999) 99-999-99");
+  });
+
 new WOW().init();
 
 $(document).ready(function(){
@@ -66,3 +70,30 @@ function offScript(){
     modal.style.display = 'none';
 };
 
+function offThanksScript(){
+    var modal = document.getElementById('thanks')
+    modal.style.display = 'none';
+};
+
+$(document).ready(function() {
+    var modal = document.getElementById('thanks');
+    var modal1 = document.getElementById('MyModal');
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+            modal.style.display = "block";
+            modal1.style.display = 'none';
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
