@@ -18,6 +18,10 @@
             right: -40px
         &_left
             left: -40px
+        &_right1
+            right: -40px
+        &_left1
+            left: -40px
 @media (max-width: 991px)
     .container
         width: 700px
@@ -77,6 +81,9 @@
                 font-size: 30px
                 line-height: 40px
                 max-width: 450px
+    .type
+        &-item
+            filter: none
     .slider
         max-width: 650px
         &-button
@@ -135,7 +142,29 @@
         padding: 15px
         margin-bottom: 10px
     .slider
-        max-width: 500px      
+        max-width: 470px  
+        display: flex
+        justify-content: center
+        img
+            margin: 0 auto
+        &-wrap
+            margin: 0 auto  
+            max-width: 350px 
+            text-align: center
+            padding-left: 0
+        &-close
+            display: block 
+        &__item
+            &-subtitle   
+                display: none
+            &-descr
+                display: none
+            &-wrap
+                flex-direction: column
+            &-img
+                display: block
+                img
+                    height: 260px
     .carousel
         max-width: 300px
     .modal1
@@ -200,26 +229,34 @@
             font-size: 18px
     .slider
         max-width: 280px
+        img
+            height: 200px
         &-button
             padding: 10px 25px
+        &-close
+            display: block
         &-wrap
             padding-left: 0
             max-width: 250px
+            margin: 0 auto
+            text-align: center
         &__item
-            margin-left: 15px
-            img
-                height: 200px
             &-subtitle   
-                margin-top: 15px
+                display: none
             &-descr
-                margin-top: 5px
+                display: none
             &-wrap
                 margin-top: 15px
+            &-img
+                display: block
+                img
+                    height: 200px
+                    width: 250px
             &-block_digit
                 font-size: 10px
                 margin-top: 5px
             &-button
-                margin-top: 20px
+                margin-top: 25px
     .projects
         padding: 50px
         &-title
@@ -232,6 +269,10 @@
         &_right
             right: -30px
         &_left
+            left: -30px
+        &_right1
+            right: -30px
+        &_left1
             left: -30px
     .clients
         padding-top: 50px

@@ -9,12 +9,14 @@
         background-color: #23bac1
     &-subtitle
         margin-top: 35px
-        margin-bottom: 70px
+        margin-bottom: 90px
 .slider
     max-width: 900px
     margin: 0 auto
     align-items: center
     position: relative
+    &-close
+        display: none
     &-wrap
         padding-left: 40px
         max-width: 450px
@@ -25,6 +27,9 @@
     &__item    
         &:focus
             outline: none  
+        &-img
+            display: none
+            
         &-title
             font-size: 24px
             +light
@@ -49,6 +54,14 @@
             margin-top: 10px
         &-button
             margin-top: 60px
-
+.arrow
+    &_right1
+        background: url('../img/right.png') no-repeat center 
+        right: -130px
+        top: 45%
+    &_left1
+        background: url('../img/left.png') no-repeat center 
+        left: -130px
+        top: 45%
             
 

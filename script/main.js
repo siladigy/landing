@@ -13,11 +13,11 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
-    nextArrow: '<div class="arrow arrow_right"></div>',
-    prevArrow: '<div class="arrow arrow_left"></div>',
+    nextArrow: '<div class="arrow arrow_right1"></div>',
+    prevArrow: '<div class="arrow arrow_left1"></div>',
     responsive: [
         {
-            breakpoint: 770,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
